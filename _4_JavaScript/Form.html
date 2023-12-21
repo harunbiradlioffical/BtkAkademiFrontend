@@ -1,0 +1,71 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <title>Form</title>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <!-- Bootstrap CSS v5.2.1 -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+
+  <!-- external css -->
+  <link rel="stylesheet" href="form.css">
+</head>
+
+<body>
+
+  <h2 class="text-center text-primary">Form Login</h2>
+  <hr style="width:25%; margin-left:38%">
+  <!-- event="prevent.Default()" -->
+  <form  method="get" autocomplete="on" id="form_id" name="form_name">
+
+    <div class="container">
+      <div class="row">
+
+        <!-- Emailiniz -->
+        <div class="col-md-1">
+          <label for="email_id">Emailiniz:</label>
+        </div>
+        <div class="col-md-11">
+          <input type="email" id="email_id" autofocus="true" required placeholder="Emailiniz" title="Emailiniz ... ">
+        </div>
+
+        <!-- Şifreniz -->
+        <div class="col-md-1 mt-2">
+          <label for="password_id">Şifreniz:</label>
+        </div>
+        <div class="col-md-11 mt-2">
+          <input type="password" id="password_id"  required placeholder="Şifreniz" title="Şifreniz ... ">
+        </div>
+
+        <div class="col-md-1 mt-2">
+          <label for=""></label>
+        </div>
+        <div class="col-md-11 mt-4">
+         <input type="reset" class="btn btn-warning" value="Temizle">
+         <button type="submit" class="btn btn-primary" onclick="submitForm()"> Gönder </button>
+        </div>
+
+      </div>
+    </div>
+  </form>
+
+
+
+  <!-- Bootstrap JavaScript Libraries -->
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+    integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous">
+    </script>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"
+    integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+" crossorigin="anonymous">
+    </script>
+
+  <!-- external js -->
+  <script src="form.js"></script>
+</body>
+
+</html>

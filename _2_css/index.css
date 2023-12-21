@@ -1,0 +1,187 @@
+/* css comment */
+/* 
+id   : #parag_id
+class: .parag_class 
+*/
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 15px;
+}
+
+body {
+    /* background-color: orange; */
+}
+
+header {
+    background-image: url("../utils/img/beach-8329531_1280.jpg");
+    width: 100%;
+    height: 400px;
+    margin-bottom: 1rem;
+    background-size: cover;
+    background-position: center;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+.parag_class {
+    color: blue;
+    color: #123;
+    color: #ff1122;
+    color: rgb(0, 0, 0);
+    color: rgba(0, 0, 0, 0.4);
+    color: rgba(227, 13, 13, 0.7);
+    color: rgba(227, 209, 13);
+
+    background-color: black;
+
+    padding-top: 30px;
+    padding-right: 20px;
+    padding-bottom: 20px;
+    padding-left: 15px;
+    padding: 30px 20px 20px 15px;
+    padding: 20px;
+    padding: 30px 20px;
+    margin: 30px 20px 20px 15px;
+
+    text-align: justify;
+    text-indent: 20px;
+    line-height: 1;
+
+    font-size: 14px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bolder;
+    font-style: italic;
+
+    transition: 3s all;
+
+    column-count: 2;
+    column-rule: 1px solid black;
+}
+
+/* hover */
+p:hover {
+    color: black;
+    background-color: rgba(227, 209, 13);
+    transition: 2s ease-in-out;
+    text-transform: uppercase;
+}
+
+.div_class {
+    width: 23%;
+    height: 50px;
+    border: 1px solid blue;
+    background-color: red !important;
+    display: inline-block;
+    padding: 1rem;
+    transition: 3s all;
+    border-radius: 5%;
+}
+
+.div_class:hover {
+    cursor: pointer;
+    width: 45%;
+    border-radius: 7%;
+    transform: rotate(180deg);
+}
+
+
+/* List */
+ul {
+    list-style-type: none;
+
+}
+
+ul li {
+    display: inline-block;
+    background-color: blueviolet;
+    color: white;
+    padding-top: 0.3rem;
+    padding-left: 0.2rem;
+    padding-right: 0.2rem;
+    padding-bottom: 0.2rem;
+    margin-bottom: 1rem;
+    border-radius: 5%;
+    font-size: .8rem;
+    position: fixed;
+    top: 0;
+}
+
+ul li:hover {
+    background-color: white;
+    color: blueviolet;
+    transition: 2s all;
+    cursor: pointer;
+}
+
+#back_top {
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    background-color: blue;
+    color: white;
+    padding: 0.1rem;
+    opacity: 0.8;
+    border-radius: 10%;
+}
+
+#back_top:hover {
+    opacity: 0.5;
+}
+
+.div_float {
+    background-color: blue;
+    color: white;
+    width: 23%;
+    display: inline-block;
+    min-height: 50px;
+    padding: 1rem;
+    float: right;
+    margin-right: 10px;
+    margin-bottom: 2rem;
+    box-shadow: 1px 0.8px 5px 0.8px rgba(0, 0, 0, .8)
+}
+
+.div_float:hover {
+    box-shadow: 1px 1px 5px 1px rgba(0, 0, 0, .5)
+}
+
+/* responsive design */
+.div_class_responsive {
+    width: 100%;
+    height: 50px;
+    border: 1px solid blue;
+    background-color: red !important;
+    display: inline-block;
+    padding: 1rem;
+    border-radius: 5%;
+}
+
+/* 468<=RS<=767 */
+@media (min-width:768px) and (max-width:980px) {
+    .div_class_responsive {
+        width: 49%;
+    }
+}
+
+/* 981<=RS<=1199 */
+@media (min-width:981px) and (max-width:1199px) {
+    .div_class_responsive {
+        width: 32%;
+    }
+}
+
+/* =RS<=1200 */
+@media (min-width:1200px)  {
+    .div_class_responsive {
+        width: 24%;
+    }
+}
